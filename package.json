@@ -1,0 +1,41 @@
+{
+  "name": "custom_tab",
+  "version": "0.0.1",
+  "description": "custom tab",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/westberrie/custom_tab.git"
+  },
+  "keywords": [
+    "custom",
+    "tab"
+  ],
+  "author": "Sergei Nesterenko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/westberrie/custom_tab/issues"
+  },
+  "homepage": "https://github.com/westberrie/custom_tab#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.13",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-terser": "^2.0.0"
+  },
+  "browserslist": [
+    "last 1 version",
+    "> 1%",
+    "maintained node versions",
+    "not dead"
+  ]
+}

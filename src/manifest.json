@@ -1,0 +1,17 @@
+{
+  "name": "Custom Tab",
+  "version": "0.0.1",
+  "description": "Changes the default new tab",
+  "manifest_version": 2,
+  "author": "Sergei Nesterenko",
+  "browser_action": {
+    "default_title": "Changes the default new tab",
+    "default_icon": "icons/new_tab_48.png" 
+  },
+  "icons": { "16": "icons/new_tab_16.png",
+           "48": "icons/new_tab_48.png",
+          "128": "icons/new_tab_128.png" },
+  "chrome_url_overrides" : {
+    "newtab": "index.html"
+  }
+}
