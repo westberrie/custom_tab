@@ -1,40 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>New Tab</title>
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.min.css" />
-  </head>
-  <body>
-    <!-- <div class="background"></div> -->
-    <nav class="navigation">
-      <div class="navigation__wrapper">
-        <a href="https://translate.google.com/" class="navigation__link"
-          ><div class="navigation__icon">
-            <img src="icons/google_translate.png" alt="Google Translate" /></div
-        ></a>
-        <a href="https://mail.google.com/" class="navigation__link"
-          ><div class="navigation__icon">
-            <img src="icons/google_mail.png" alt="Google Mail" /></div
-        ></a>
-        <a href="https://www.youtube.com/" class="navigation__link"
-          ><div class="navigation__icon">
-            <img src="icons/youtube.png" alt="YouTube" /></div
-        ></a>
-        <a href="https://drive.google.com/" class="navigation__link"
-          ><div class="navigation__icon">
-            <img src="icons/google_drive.png" alt="Google Drive" /></div
-        ></a>
-        <a href="https://music.yandex.ru/" class="navigation__link"
-          ><div class="navigation__icon">
-            <img src="icons/yandex_music.png" alt="Yandex Music" /></div
-        ></a>
-        <a href="https://aliexpress.ru/" class="navigation__link"
-          ><div class="navigation__icon">
-            <img src="icons/aliexpress.png" alt="Aliexpress" /></div
-        ></a>
-      </div>
-    </nav>
-  </body>
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav class="navbar">
+            <a href="https://translate.google.com/" class="navbar__link">
+                <div class="navbar__icon">
+                    <img src="icons/navbar/google_translate.png" alt="Google Translate" />
+                </div>
+            </a>
+            <a href="https://mail.google.com/" class="navbar__link">
+                <div class="navbar__icon">
+                    <img src="icons/navbar/google_mail.png" alt="Google Mail" />
+                </div>
+            </a>
+            <a href="https://www.youtube.com/" class="navbar__link">
+                <div class="navbar__icon">
+                    <img src="icons/navbar/youtube.png" alt="YouTube" />
+                </div>
+            </a>
+            <a href="https://drive.google.com/" class="navbar__link">
+                <div class="navbar__icon">
+                    <img src="icons/navbar/google_drive.png" alt="Google Drive" />
+                </div>
+            </a>
+            <a href="https://music.yandex.ru/" class="navbar__link">
+                <div class="navbar__icon">
+                    <img src="icons/navbar/yandex_music.png" alt="Yandex Music" />
+                </div>
+            </a>
+            <a href="https://aliexpress.ru/" class="navbar__link">
+                <div class="navbar__icon">
+                    <img src="icons/navbar/aliexpress.png" alt="Aliexpress" />
+                </div>
+            </a>
+        </nav>
+
+        <div class="note-container">
+        </div>
+
+        <footer class="footer">
+          <div class="new-note">New note</div>
+          <div class="gear">
+              <input type="checkbox" id="checkbox" class="gear__checkbox" />
+              <label for="checkbox">
+                  <img src="icons/gear.png" class="gear__icon" alt="icon" />
+              </label>
+          </div>
+        </footer>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
 </html>

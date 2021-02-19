@@ -1,0 +1,21 @@
+.gear {
+  right: 35px;
+  width: 60px;
+  height: 60px;
+  z-index: 2;
+  user-select: none;
+  &__checkbox {
+    position: absolute;
+    height: 0;
+    width: 0;
+    z-index: -1;
+    &:checked + label > .gear__icon {
+      transform: rotate(180deg);
+    }
+  }
+  &__icon {
+    cursor: pointer;
+    rotate: 0deg;
+    transition: all 1s;
+  }
+}

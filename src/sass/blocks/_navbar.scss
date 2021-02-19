@@ -1,0 +1,31 @@
+.navbar {
+  justify-self: center;
+  width: 70%;
+  // max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 ;
+  padding: 15px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 20px;
+  &__link {
+    user-select: none;
+  }
+  &__icon {
+    margin: 0 10px;
+    max-width: 70px;
+    max-height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+    img {
+      width: 100%;
+    }
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}

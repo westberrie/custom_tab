@@ -1,33 +1,43 @@
 @import 'libs/normalize';
 
-body {
-  box-sizing: border-box;
-  height: 100vh;
-  padding-top: 70px;
-  background: url('../img/bg_main.jpg') center center / cover no-repeat;
+* {
+    box-sizing: border-box;
+    font-family: 'Libre Baskerville', serif;
+    padding: 0;
+    margin: 0;
 }
 
-.navigation {
-  max-width: 1170px;
-  padding: 0 15px;
-  margin: 0 auto;
-  &__wrapper {
-    padding: 15px 0;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.4);
-    border-radius: 20px;
-  }
-  &__icon {
-    margin: 0 10px;
-    max-width: 70px;
-    max-height: 70px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    img {
-      width: 100%;
-    }
-  }
+.wrapper {
+    height: 100vh;
+    padding: 40px 15px 15px;
+    background: url('../img/bg_main.jpg') center center / cover no-repeat;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 1fr 60px;
+    row-gap: 10px;
+
 }
+
+.note-container {
+    grid-row: 2;
+    position: relative;
+}
+
+.footer {
+    grid-row: 3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.new-note {
+    line-height: 30px;
+    color: #fff;
+    cursor: pointer;
+    user-select: none;
+    font-weight: bold;
+    z-index: 2;
+}
+
+@import 'blocks/navbar';
+@import 'blocks/gear';
+@import 'blocks/note';
